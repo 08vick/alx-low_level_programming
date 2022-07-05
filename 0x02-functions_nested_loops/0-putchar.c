@@ -2,18 +2,19 @@
 /**
 *main - Entry point
 *
-*Return: always 09 (success)
+*Return: Always 0 (success)
 */
 int main(void)
 {
-char *sh = "_putchar";
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
 
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
+_putchar('h');
+_putchar('a');
+_putchar('r');
 _putchar('\n');
-
 return (0);
 }
