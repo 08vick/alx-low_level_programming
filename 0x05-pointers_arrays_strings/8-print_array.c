@@ -1,27 +1,20 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
-*print_array - points n element of integers
-*@a: A pointer to an int that will be updated or changed
-*@n: Return value n
+*print_array - A function that prints n elements of a*@a: an input array
+*@n: an input integer
 *Return: void
 */
-void prints_array(int *a, int n)
+void Print_array(int *a, int n)
 {
-int i;
+int i = 0;
 
-i = 0;
-while (i < n)
+for (; i < n; i++)
 {
 printf("%d", a[i]);
-
 if (i < n - 1)
-{
 printf(", ");
 }
-
-i++;
-}
-
-printf("\n");
+putchar('\n');
 }
