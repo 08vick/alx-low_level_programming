@@ -1,55 +1,21 @@
-#i"
-"clude "mai"
-".h"
-#i"
-"clude <stdio.h>
+#include "main.h"
+#include <stdio.h>
+
 /**
-*pri"
-"t_array -pri"
-"ts "
-" elme"
-"ts of a"
-" array of i"
-"tegers
-*@a: A poi"
-"ter to a"
-" i"
-"t that will be updated or cha"
-"ged
-*@"
-": Retur"
-" value "
-"
-*Retur"
-": void
+*print_array - A function that prints n elements of array of integers, followed by a new line
+*@a: an input array
+*@n: an input integer
+*Return: void
 */
-void pri"
-"t_array(i"
-"t *a, i"
-"t "
-")
+void print_array(int *a, int n)
 {
-i"
-"t i;
+int i = 0;
 
-i = 0;
-while (1 < "
-")
+for (; i < n; i++)
 {
-pri"
-"tf("%d", a[i]);
-
-if (i < "
-" - 1)
-{
-pri"
-"tf(", ");
+printf("%d", a[i]);
+if (i < n - 1)
+printf(", ");
 }
-
-i++;
-}
-
-pri"
-"tf('\"
-"');
+putchar('\n');
 }
