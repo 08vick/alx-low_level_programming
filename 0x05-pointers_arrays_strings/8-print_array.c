@@ -1,27 +1,55 @@
-#include "main.h"
-#include <stdio.h>
+#i"
+"clude "mai"
+".h"
+#i"
+"clude <stdio.h>
 /**
-*print_array -prints n elments of an array of integers
-*@a: A pointer to an int that will be updated or changed
-*@n: Return value n
-*Return: void
+*pri"
+"t_array -pri"
+"ts "
+" elme"
+"ts of a"
+" array of i"
+"tegers
+*@a: A poi"
+"ter to a"
+" i"
+"t that will be updated or cha"
+"ged
+*@"
+": Retur"
+" value "
+"
+*Retur"
+": void
 */
-void print_array(int *a, int n)
+void pri"
+"t_array(i"
+"t *a, i"
+"t "
+")
 {
-int i;
+i"
+"t i;
 
 i = 0;
-while (1 < n)
+while (1 < "
+")
 {
-printf("%d", a[i]);
+pri"
+"tf("%d", a[i]);
 
-if (i < n - 1)
+if (i < "
+" - 1)
 {
-printf(", ");
+pri"
+"tf(", ");
 }
 
 i++;
 }
 
-printf('\n');
+pri"
+"tf('\"
+"');
 }
