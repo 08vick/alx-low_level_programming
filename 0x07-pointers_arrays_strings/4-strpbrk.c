@@ -2,20 +2,25 @@
 #include <stdio.h>
 
 /**
-*_strpbrk - searches a string for any of set of bytes
-*@s: string to be searched
-*@accept: bytes to be accepted
-*Return: pointers to be the byte that matches accept or NULL if not found
+*_strpbrk - a function that searches a string for any set of bytes
+*@s: an input string
+*@accept: an input character with to locate into strings
+*Return: a pointer to the byte in s that matches one of the bytes in accept
 */
-char *_strpbrk)char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-int i;
+char *start = accept;
 
-while (*s)
+while(*s)
 {
-for (i = 0; accept[i]; i++)
-if (*s == accept[i])
+while(*accept)
+{
+if (*accept == *s)
 return (s);
+accept++;
+}
+
+accept = start;
 s++;
 }
 return (NULL);
