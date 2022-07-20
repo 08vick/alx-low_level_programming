@@ -1,13 +1,12 @@
 #include "main.h"
 /**
 *_evaluate - evaluate function sqrt
-*@i: integer
+*@i: interger
 *@n: integer
 *Return: evaluate sqrt
 */
 int _evaluate(int i, int n)
 {
-
 /*Evaluate function*/
 if (n == 0 || n == 1)
 return (n);
