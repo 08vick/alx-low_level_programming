@@ -13,6 +13,6 @@ _puts_recursion(s + 1);
 }
 else
 {
-_puttchar('\n');
+_putchar('\n');
 }
 }
