@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
-*main - A problem that multiplies two numbers
-*@argc: The argument counter
-*@argv: The argument values
-*Return: Always 0 (success)
+*main - mul 2 argv
+*@argc: int
+*@argv: string
+*Return: int
 */
-int main(int argc, char **argv)
-
+int main(int argc, char *argv[])
 {
-int num1, num2, result;
+int x, i, j;
 
 if (argc != 3)
 {
@@ -19,9 +17,10 @@ return (1);
 }
 else
 {
-num1 = atoi(argv[1]);
-num2 = atoi(argv[2]);
-result = num1 * num2;
-printf("%d\n", result);
+i = atoi(argv[1]);
+j = atoi(argv[2]);
+x = i * j;
+printf("%d\n", x);
+}
 return (0);
 }
