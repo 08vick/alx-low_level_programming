@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 *main - display name of program
-*@arg: int
+*@argc: int
 *@argv: string
 *Return: int
 */
