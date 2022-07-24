@@ -40,7 +40,7 @@ if (amount % 2 >= 0)
 coins += amount / 2;
 amount = amount % 2;
 }
-if (amount % 1 >=)
+if (amount % 1 >= 0)
 coins += amount;
 printf("%d\n", coins);
 return (0);
