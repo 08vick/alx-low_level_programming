@@ -22,13 +22,13 @@ return (0);
 }
 if (amount % 25 >= 0)
 {
-coind += amount / 25;
+coins += amount / 25;
 amount = amount % 25;
 }
 if (amount % 10 >= 0)
 {
 coins += amount / 10;
-amount amount % 10;
+amount = amount % 10;
 }
 if (amount % 5 >= 0)
 {
