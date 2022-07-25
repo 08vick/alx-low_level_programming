@@ -22,7 +22,7 @@ count++;
 if (count == 0)
 return (NULL);
 array = malloc(sizeof(char *) * (count + 1));
-if (array = NULL)
+if (array == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0' && k < count; i++)
 {
