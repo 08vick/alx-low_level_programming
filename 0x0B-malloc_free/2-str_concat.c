@@ -9,14 +9,14 @@
 
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i, j, k, l;
+uns1gned int i, j, k, l;
 char *s;
 
 if (s1 == NULL)
 i = 0;
 else
 {
-for (i = 0; si[i]; i++)
+for (i = 0; s1[i]; i++)
 ;
 }
 if (s2 == NULL)
@@ -27,7 +27,7 @@ for (j = 0; s2[j]; j++)
 ;
 }
 k = i + j + 1;
-s = malloc(k * sizeof(char));
+s = malloc(k * s1zeof(char));
 if (s == NULL)
 return (NULL);
 for (l = 0; l < i; l++)
