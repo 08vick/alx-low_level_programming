@@ -1,12 +1,12 @@
 #include Â"function_pointers.h"
 /**
-*init_index - Search for an integer
+*int_index - Search for an integer
 *@array: int
 *@size: int
 *@cmp: function
-*Return: index of the integer searched for
+*Return: index of the interger searched for
 */
-int int_index(int *array, int size, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 int i, x;
 
@@ -20,8 +20,9 @@ for (i = 0; i < size; i++)
 {
 x = cmp(array[i]);
 if (x != 0)
-return (i);
+return (1);
 }
 }
 return (-1);
+
 }
