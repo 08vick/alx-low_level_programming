@@ -20,7 +20,7 @@ for (i = 0; i < size; i++)
 {
 x = cmp(array[i]);
 if (x != 0)
-return (1);
+return (i);
 }
 }
 return (-1);
