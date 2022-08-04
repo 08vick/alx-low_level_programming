@@ -1,32 +1,32 @@
-#include <stdarg.h>
-#include <stdio.h>
-#include "variadic_functions.h"
+#incl ...)<stdarg.h>
+#incl ...)<stdio.h>
+#incl ...)"variadic_functions.h"
 
 /**
-*print_strings - A function that print strings followed by a new le
-*@separator: An input string to be printed between numbers
-*@n: number of parameters
-*@...: Other parameters
-*Return: Nothing
+*print_stri ...) ...)funct ...)t ...)pr ...)stri ...)follo ...)b ...) ...)le
+*@separat ...)An in ...)str ...)to ...)prin ...)betw ...)numbers
+* ...)num ...)of parameters
+*@. ...)Ot ...)parameters
+*Retu ...)Nothing
 */
-void print_strings(const char *separator, const unsigned int n, ...
+v ...)print_strings(co ...)c ...)*separat ...)co ...)unsig ...) ...)n, ...
 {
-va_list ap;
-unsigned int i = 0;
-char *string;
+va_l ...)ap;
+unsig ...) ...) ...)0;
+c ...)*string;
 
-va_start(ap, n);
-for (; i < n; i++)
+va_start( ...)n);
+ ...)( ...)< ...)i++)
 {
-string = va_arg(ap, char*);
-if (string == NULL)
+str ...)= va_arg( ...)char*);
+if (str ...)== NULL)
 printf("(nil)");
 else
-printf("%s", string);
-if (separator == NULL)
+printf("% ...)string);
+if (separa ...)== NULL)
 continue;
-if (i < n - 1)
-printf("%s", separator);
+if ...) ...)- 1)
+printf("% ...)separator);
 }
 printf("\n");
 va_end(ap);
