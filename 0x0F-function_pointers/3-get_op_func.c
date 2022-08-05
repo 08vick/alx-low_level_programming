@@ -2,16 +2,16 @@
 #include <string.h>
 
 /**
-*get_op_func - selects the correct
+*get_op_func - Selects the correct operation toperform
 *@s: operation to perform
 *
-*Return: pointer to the corrext function
+*Return: pointer to the correct function
 */
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
 {"+", op_add},
-{"-", op_sub}'
+{"-", op_add},
 {"*", op_mul},
 {"/", op_div},
 {"%", op_mod},
