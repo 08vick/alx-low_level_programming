@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "variadic_functions"
 #include <stdarg.h>
 #include<stdio.h>
 /**
@@ -13,17 +13,17 @@ va_list list;
 unsigned int i;
 char *str;
 
-va_start(list...)
+va_start(list, n);
 for (i = 0; i < n; i++)
 {
-str = va_arg(list, cha...)
+str = va_arg(list, char *);
 if (str)
-printf("%s", ...)
+printf("%s", str);
 else
-printf("(ni...)
+printf("(nil)");
 if (i < n - 1 && separator)
-printf("%s", separa...)
+printf("%s", separator);
 }
-va_end(l...)
-printf("...)
+va_end(list);
+printf("\n");
 }
