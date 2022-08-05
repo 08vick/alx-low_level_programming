@@ -19,12 +19,12 @@ return (a + b);
 *Return:result
 */
 
-int o_sub(int a, int b)
+int op_sub(int a, int b))
 {
 return (a - b);
 }
 /**
-*op_mul - mul
+*op_mul -  mul
 *@a:integer
 *@b:integer
 *Return:result
@@ -56,7 +56,6 @@ return (a / b);
 *@b:integer
 *Return:result
 */
-
 int op_mod(int a, int b)
 {
 if (b == 0)
