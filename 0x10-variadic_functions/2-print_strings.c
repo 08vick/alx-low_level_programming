@@ -7,23 +7,23 @@
 *@n:unsigned int
 *Return:void
 */
-void print_strings(const char *separator, const unsigned int n, ...);
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list list;
 unsigned int i;
 char *str;
 
-va_start(list, n);
+va_start(list...)
 for (i = 0; i < n; i++)
 {
-str = va_arg(list, char *);
+str = va_arg(list, cha...)
 if (str)
-printf("%s", str);
+printf("%s", ...)
 else
-printf("(nil)");
+printf("(ni...)
 if (i < n - 1 && separator)
-printf("%s", separator);
+printf("%s", separa...)
 }
-va_end(list);
-printf("\n");
+va_end(l...)
+printf("...)
 }
