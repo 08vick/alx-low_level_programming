@@ -30,10 +30,10 @@ exit(2);
 for (index = 0; index < bytes; index++)
 {
 opcode = *(unsigned char *)address;
-prinf("%.2x", opcode);
+printf("%.2x", opcode);
 
 if (index == bytes - 1)
-conitnue;
+continue;
 printf(" ");
 
 address++;
