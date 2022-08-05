@@ -15,6 +15,6 @@ typedef struct print
 {
 char *x;
 void (*T_func)(va_list);
-}t_print;
+} t_print;
 
 #endif
