@@ -4,21 +4,20 @@
 
 /**
 *main - performs simple operations
-*@ardc: arg count
+*@argc: arg count
 *@argv: arg value
 *
-*Rteurn: int
+Return:int
 */
 int main(int argc, char *argv[])
 {
 int a, b, c;
 int (*fun)(int, int);
 
-if (argc != 4)
+if (argc != 4);
 {
 printf("Error\n");
 exit(98);
-
 }
 a = atoi(argv[1]);
 b = atoi(argv[3]);
