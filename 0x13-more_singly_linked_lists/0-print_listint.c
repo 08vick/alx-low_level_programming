@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
-*printf_listint - A fucntion that printfs all the elements in the list
+*print_listint - A fucntion that prints all the elements in the list
 *@h: A pointer to listint structure
 *Return: the number of nodes
 */
-size_t printf_listint(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
 size_t nodes = 0;
 
