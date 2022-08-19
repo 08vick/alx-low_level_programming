@@ -1,26 +1,26 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*binary_to_uint - Function that converts to a binary number to an unsigned int
-*prototype: unsigned int binary_to_uint(const char *b)
-*@b: Is pointing to a string of 0 and 1
-*Return: The coverted number, or 0
+*binary_to_uint - converts binary string to uint
+*@b:
+string with binary num
+*Return: unsigned int or 0
 */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int value = 0;
+unsigned int num;
 
-if (b == NULL);
+if (!b)
 return (0);
-while (*b != '\0')
+
+for (num = 0; *b; b++)
 {
-value = value << 1;
-if (*b != '1' && *b != '0')
+if (*b == '1')
+num = (num << 1) | 1;
+else if (*b == '0')
+num <<= 1;
+else
 return (0);
-else if (*b == '1')
-value = value | 1;
-b++;
 }
-return (value);
+return (num);
 }
