@@ -5,7 +5,7 @@
 *@n: The num
 *Return: void
 */
-void priint_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 unsigned long int i;
 int print = 0;
