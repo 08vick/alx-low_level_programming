@@ -1,18 +1,18 @@
-#include "main.h" 
+#include "main.h"
 
 /**
-*print_binary - print binary num
-*@n: the num
+*print_binary - prints binary num
+*@n: The num
 *Return: void
 */
-void print_binary(unsigned long int n)
+void priint_binary(unsigned long int n)
 {
 unsigned long int i;
 int print = 0;
 
 if (n == 0)
 _putchar('0');
-for (i = 1UL << 63; i > 0; i)
+for (i = 1UL << 63; i > 0; i >>= 1)
 {
 if (n & i)
 {
