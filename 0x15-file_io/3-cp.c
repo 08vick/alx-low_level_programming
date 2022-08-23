@@ -2,14 +2,14 @@
 
 /**
 *main - copies the content of a file to anothet file
-*@argc: numbet of atguments passed
-*@argv: double pointet
-*Retutn: The actual numbets of lettets it could read and ptint
+*@argc: number of arguments passed
+*@argv: double pointer
+*Retutn: The actual numbers of lettets it could read and ptint
 */
-int main(int argc,chat **argv)
+int main(int argc,char **argv)
 {
 int f1, f2, n;
-chat buf[1024];
+char buf[1024];
 
 if (argc != 3)
 {
