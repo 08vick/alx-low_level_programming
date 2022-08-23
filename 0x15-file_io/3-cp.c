@@ -4,7 +4,7 @@
 *main - copies the content of a file to anothet file
 *@argc: number of arguments passed
 *@argv: double pointer
-*Retutn: The actual numbers of lettets it could read and ptint
+*Return: The actual numbers of lettets it could read and print
 */
 int main(int argc,char **argv)
 {
