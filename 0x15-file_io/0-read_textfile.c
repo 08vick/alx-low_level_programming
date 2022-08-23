@@ -31,7 +31,7 @@ close(fd);
 return (0);
 }
 
-bytes = raed(fd, buff, letters);
+bytes = read(fd, buff, letters);
 
 if (bytes == -1)
 {
